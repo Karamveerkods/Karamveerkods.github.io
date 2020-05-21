@@ -1,0 +1,232 @@
+.homePage
+{
+	/* background-color: #12424A; */
+	font-family: Montserrat;
+	font-size: 20pt;
+	overflow: hidden;
+	background-color: skyblue;
+}
+
+.homePageContainer
+{
+	display: flex;
+	height: 100vh;
+	max-width: 100vw;
+}
+
+.sun{
+	position: fixed;
+	bottom: 44%;
+	left: 5%;
+
+}
+
+
+.sun img{
+	max-width: 640px;
+	max-height: 452px;
+}
+
+.sun p { 
+	position: absolute;
+	bottom: 50%;
+	width: 100%;
+	left: 25%; 
+	z-index: 1000;
+	text-align: justify;
+ }
+ .sun p span { 
+	color: white; 
+	font: bold 44px/45px Helvetica, Sans-Serif; 
+	letter-spacing: -1px;  
+	background: rgb(0, 0, 0); /* fallback color */
+	background: rgba(0, 0, 0, 0.7);
+	padding: 5px; 
+ }
+
+ .sun h2 span.spacer {
+	background: transparent;
+	padding:0 5px;
+ }
+
+.homepageRoad{
+	position: fixed;
+	bottom:20%;
+	height: 100%;
+	max-height: 160px;
+	width: 100%;
+	background-color: #333333;
+}
+
+.grassB{
+	position: fixed;
+	width:65%;
+	bottom:36%;
+	border-top-right-radius: 100%;
+	height: 100px;
+	z-index: 1000;
+	background: #3B5323;
+}
+.grassC{
+	position: fixed;
+	width:55%;
+	bottom:36%;
+	right:0px;
+	border-top-left-radius: 100%;
+	height: 200px;
+	z-index: 10;
+	background: #526F35;
+}
+
+.homePageDivider{
+	position: absolute;
+	width: 100%;
+	bottom:50%;
+	border: 5px dotted white;
+}
+
+/* .shubharam{
+	left:5%;
+} */
+
+.mining{
+	left:17%;
+}
+
+.manufacturing{
+	left:37%;
+}
+
+.testing{
+	left:57%;
+}
+
+
+.trading{
+	left:77%;
+}
+
+.homePageBall 
+{
+	position: fixed;
+	color: white;
+	text-align: center;
+	max-height: 100px;
+	max-width: 100px;
+	border-radius: 60px;
+
+	z-index: 1000;
+	bottom: 5%;
+ }
+
+ .homePageBall img
+ {
+	text-align: center;
+	line-height: 120px;
+	max-height: 100px;
+	max-width: 100px;
+	border-radius: 60px;
+}
+
+.car{
+	position: fixed;
+	bottom:25%;
+	max-width:200px;
+	z-index: 1000;
+	-webkit-animation: movebotcar 25s infinite; 
+}
+
+.glow{
+	background: yellow;
+	box-shadow: 0px -2px 36px orange;
+}
+
+@keyframes movebotcar {
+	from {right : 100%;}
+	to {right: -15%; bottom:25%}
+}
+
+@media only screen and (max-width: 802px) {
+	.homePageBall{
+		width: 19%;
+		height: 8%;
+	}
+	.homePageBall img
+	{
+		width: 70%;
+		height: 70%;
+	}
+
+	.homepageRoad{
+		height: 10%;
+	}
+
+	.sun{
+		left: 0%;
+		width: 100%;
+		bottom: 38%;
+	}
+	
+	.sun img{	
+		width: 100%;	
+	}
+
+	.sun p { 
+		bottom: 10%;
+		bottom: 40%;
+	}
+
+	 .sun p span {
+		font-size: 90%;
+
+		color: white;
+	 }
+
+
+	.car{
+		bottom:25%;
+		width: 20%;
+	}
+
+	.homePageDivider{
+		border: 2px dotted white;
+	}
+
+	.grassB{
+		height:10%;
+		bottom:30%;
+	}
+	.grassC{
+		height:10%;
+		bottom:30%;
+	}
+
+	footer{
+		font: 7px sans-serif;
+	}
+
+	.mining{
+		left:5%;
+	}
+	
+	.manufacturing{
+		left:30%;
+	}
+	
+	.testing{
+		left:55%;
+	}
+	
+	
+	.trading{
+		left:80%;
+	}
+
+	@keyframes movebotcar {
+		from {right: 100%;}
+		to {right: -15%; bottom:25%}
+	}
+
+}
+
+

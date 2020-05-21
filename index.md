@@ -21,6 +21,8 @@
 
     <link href="css/superStyle.css" rel="stylesheet" />
 
+    <link href="css/homepage.css" rel="stylesheet" />
+
 
 </head>
 
@@ -29,7 +31,7 @@
     <!-- Navigation -->
     <nav class="mb-1 navbar navbar-expand-lg navbar-dark info-color fixed-top" style="background-color: #33b5e5;">
         <a href="#home" id="logo" class="navbar-brand">
-            <img src="se.png" height="40" alt="mdb logo">
+            <img src="se1.png" height="40" alt="mdb logo">
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
@@ -58,33 +60,35 @@
     </nav>
 
     <header class="inner-wrapper" id="home">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-                <!-- Slide One - Set the background image for this slide in the line below -->
-                <div class="carousel-item active"
-                    style="background-image: url('https://specials-images.forbesimg.com/imageserve/5db74630616a45000704c649/960x0.jpg?fit=scale')">
-                </div>
-                <!-- Slide Two - Set the background image for this slide in the line below -->
-                <div class="carousel-item"
-                    style="background-image: url('https://images.custommade.com/LWPF1BaPWmijS-LulgaY14xuohk=/custommade-photosets/10682/10682.46450.jpg')">
-                </div>
-                <!-- Slide Three - Set the background image for this slide in the line below -->
-                <div class="carousel-item" style="background-image: url('slider/slider_3.jpg')">
+        <div class="homePage">
+            <div class="sun">
+                <img src="img/board.webp"/>
+                <p><span>Shubham</span></p>
+            </div>
+            <div class="grassB">
+
+            </div>
+            <div class="grassC">
+
+            </div>
+
+            <img src="img/truck.png" class="car">
+
+            <div class="homePageRoad">
+
+                <div class="homePageDivider">
+
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+
+            <div class="homePageContainer">
+                <!-- <a class="homePageBall shubharam"><img src="se.JPG"/></a> -->
+                <a class="homePageBall mining" data-process="Mining"><img src="img/mining.png"/></a>
+                <a class="homePageBall manufacturing"  data-process="Manifacturing"> <img src="img/manufacture.png"/> </a>
+                <a class="homePageBall testing"   data-process="Testing"> <img src="img/testing1.png"/></a>
+                <a class="homePageBall trading"  data-process="Trading"> <img src="img/trading1.png"/></a>
+            </div>
+
         </div>
     </header>
 
@@ -806,7 +810,7 @@
                     </div>
                 </section>
 
-                <footer class="animation-element inner-wrapper mb-4"
+                <section class="animation-element inner-wrapper mb-4"
                     style="background-color: whitesmoke;  margin-top:70px;" id="contact">
 
                     <div class="row">
@@ -919,6 +923,8 @@
                         </div>
                     </div>
                     <!--Section: Contact v.2-->
+                </section>
+                <footer class="fixed-bottom">
                     <!-- Copyright -->
                     <div class="footer-copyright text-center py-3">© 2020 Copyright:
                         <a> shubham95@gmail.com</a>
@@ -940,7 +946,7 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js"></script>
 
-
+<script type="text/javascript" src="js/homepage.js"></script>
 
 <script>
 

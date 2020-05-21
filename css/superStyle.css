@@ -11,11 +11,13 @@ html
 	height:100%;
 }
 
+
 body
 {	width:100%;
 	height:100%;
 	color: #67727A;
 	border: 2px rigid #ECF0F1;
+	min-height:100vh;
 }
 
 .imgLogo
