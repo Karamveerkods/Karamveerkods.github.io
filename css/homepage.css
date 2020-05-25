@@ -1,13 +1,100 @@
+.process{
+	background-color: #2D3142;
+	-webkit-transition: transform .7s ease-in-out;
+	-moz-transition: transform .7s ease-in-out;
+	-ms-transition: transform .7s ease-in-out;
+	-o-transition: transform .7s ease-in-out;
+	transition: transform .7s ease-in-out;
+	z-index: 1000;
+
+}
+.navbar{
+	-webkit-box-shadow: none; 
+	box-shadow: none;
+	background-color: #2D3142;
+	z-index: 1000;
+	padding: 1%;
+}
+
 .homePage
 {
 	/* background-color: #12424A; */
 	font-family: Montserrat;
 	font-size: 20pt;
 	overflow: hidden;
-	background-color: skyblue;
+	z-index: 2;
+	position: relative;
+	height: 100%;
 }
 
-.homePageContainer
+.bar {
+	display: block;
+	height: 5px;
+	width: 50px;
+	background-color: #EF8354;
+	margin: 10px auto;
+  }
+  
+  .button {
+	cursor: pointer;
+	display: inline-block;
+	width: auto;
+	margin: 0 auto;
+	-webkit-transition: all .7s ease;
+	-moz-transition: all .7s ease;
+	-ms-transition: all .7s ease;
+	-o-transition: all .7s ease;
+	transition: all .7s ease;
+  }
+  .bar {
+	-webkit-transition: all .7s ease;
+	-moz-transition: all .7s ease;
+	-ms-transition: all .7s ease;
+	-o-transition: all .7s ease;
+	transition: all .7s ease;
+  }
+  
+  .nav-right.visible-xs .active .bar {
+	background-color: #FFF;
+	-webkit-transition: all .7s ease;
+	-moz-transition: all .7s ease;
+	-ms-transition: all .7s ease;
+	-o-transition: all .7s ease;
+	transition: all .7s ease;
+  }
+  
+  .button.active .top {
+	-webkit-transform: translateY(15px) rotateZ(45deg);
+	-moz-transform: translateY(15px) rotateZ(45deg);
+	-ms-transform: translateY(15px) rotateZ(45deg);
+	-o-transform: translateY(15px) rotateZ(45deg);
+	transform: translateY(15px) rotateZ(45deg);
+  }
+  
+  .button.active .bottom {
+	-webkit-transform: translateY(-15px) rotateZ(-45deg);
+	-moz-transform: translateY(-15px) rotateZ(-45deg);
+	-ms-transform: translateY(-15px) rotateZ(-45deg);
+	-o-transform: translateY(-15px) rotateZ(-45deg);
+	transform: translateY(-15px) rotateZ(-45deg);
+  }
+
+  .nav-right {
+	position: fixed;
+	right: 40px;
+	top: 20px;
+  }
+
+  .hidden-xs {
+  display: none;
+}
+  
+  .button.active .middle {
+	width: 0;
+  }
+
+
+  .homePageContainer
 {
 	display: flex;
 	height: 100vh;
@@ -27,26 +114,40 @@
 	max-height: 452px;
 }
 
-.sun p { 
+.sun p {
 	position: absolute;
-	bottom: 50%;
+	color: white; 	
 	width: 100%;
-	left: 25%; 
 	z-index: 1000;
+	text-align: justify,center;
+	max-width: 420px;
+	max-height: 300px;
+	font: 56% Ringside Regular A,Ringside Regular B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
 	text-align: justify;
- }
- .sun p span { 
-	color: white; 
-	font: bold 44px/45px Helvetica, Sans-Serif; 
-	letter-spacing: -1px;  
-	background: rgb(0, 0, 0); /* fallback color */
-	background: rgba(0, 0, 0, 0.7);
-	padding: 5px; 
- }
+	text-indent: 2%;
+	font-weight: 400;
 
- .sun h2 span.spacer {
-	background: transparent;
-	padding:0 5px;
+}
+
+.textOnImage { 
+	bottom: 40%;
+	left: 16%;
+	padding: 2%; 
+}
+
+.titleOnImage { 
+	bottom: 78%;
+	text-align: center;
+	font-weight: bolder;
+	color: white; 
+	padding-left:44%; 
+
+}
+
+
+ .sun p a {
+	max-width: 450px;
+	letter-spacing: 2px;  
  }
 
 .homepageRoad{
@@ -85,10 +186,6 @@
 	border: 5px dotted white;
 }
 
-/* .shubharam{
-	left:5%;
-} */
-
 .mining{
 	left:17%;
 }
@@ -114,9 +211,8 @@
 	max-height: 100px;
 	max-width: 100px;
 	border-radius: 60px;
-
 	z-index: 1000;
-	bottom: 5%;
+	bottom: 8%;
  }
 
  .homePageBall img
@@ -150,6 +246,7 @@
 	.homePageBall{
 		width: 19%;
 		height: 8%;
+		bottom: 10%;
 	}
 	.homePageBall img
 	{
@@ -164,25 +261,37 @@
 	.sun{
 		left: 0%;
 		width: 100%;
-		bottom: 38%;
+		bottom: 36%;
 	}
 	
 	.sun img{	
-		width: 100%;	
+		width: 115%;	
 	}
 
-	.sun p { 
-		bottom: 10%;
-		bottom: 40%;
+	.sun p{
+		max-width: 300px;
+		max-height: 300px;
+		font-size: 40%;
+
 	}
 
-	 .sun p span {
-		font-size: 90%;
+	.sun p a {
+		max-width: 400px;
+		max-height: 500px;
+		letter-spacing: 2px;  
+	}
 
+	 .textOnImage {
 		color: white;
-	 }
+		left: 17%; 
+		bottom: 30%;
+	}
 
-
+	.sun .p .titleOnImage { 
+		bottom: 73%;
+		padding-left:29%; 	
+	}
+	
 	.car{
 		bottom:25%;
 		width: 20%;

@@ -1,14 +1,14 @@
- $(function() {
-    
-    $(".sun h2")
-        .wrapInner("<span>")
 
-    $(".sun h2 br")
-        .before("<span class='spacer'>")
-        .after("<span class='spacer'>");
+const data = {
+    "Shubharam":"The company was established as a exporter of powder in all particle size which are used as a base and fillers in the industries like cosmetics, paper, paints, rubber, detergents, sizing for fabric, food industries etc. We have immense experience in the field of all kinds of micro minerals. ",
+    "Mining":"Mining is the process of digging things out of the ground. Any material that cannot be grown must be mined. We have the mines which posses supreme quality of products",
+    "Manufacturing":"Manufactioring is the process of converting the raw materials into the used materials. We have one of the best and versatile manufacturing units and versatile manufacturing units in our field which produces top quality materials",
+    "Testing":"We have a testing laboratory with best testing machines which tests the manufactured products as we believe in providing top quality materials",
+    "Trading":"We trade globally. We are exporters of all the minerals in all particle size and whiteness example calcite powder coated and natural, dolomite powder, china clay powder etcetera. We also deal in domestic markets"
+}
 
-        second()
-
+$(function() {
+    truckPositionChange();
 });
 
 jQuery.fn.onPositionChanged = function (trigger, millis) {
@@ -45,10 +45,10 @@ jQuery.fn.onPositionChanged = function (trigger, millis) {
 };
 
  $(".car").onPositionChanged(function () {
-     return second()
+     return truckPositionChange()
  });
 
-function second() {
+function truckPositionChange() {
     $('.homePageBall').removeClass('glow');
 
     var min = $($('.homePageBall').get(0)).position().left + $($('.homePageBall').get(0)).outerWidth(true);
@@ -56,34 +56,36 @@ function second() {
     $('.homePageBall').each(function(a,b){
             $div2 = $('.car');
             var x1 = $(b).position().left;
-            // var y1 = $div1.offset().top;
-            // var h1 = $div1.outerHeight(true);
-             var w1 = $(b).outerWidth(true);
+            var w1 = $(b).outerWidth(true);
 
-            // var b1 = y1 + h1;
             var r1 = x1 + w1;
 
             var x2 = $div2.offset().left;
-            // var y2 = $div2.offset().top;
-            // var h2 = $div2.outerHeight(true);
-             var w2 = $div2.outerWidth(true);
+            var w2 = $div2.outerWidth(true);
 
-            // var b2 = y2 + h2;
             var r2 = x2 + w2;
 
-            // console.log(" x1: ",x1)
-            // console.log(" x2: ",x2)
             if (r1<=r2) {
                 $('.homePageBall').removeClass('glow');
                 $(b).addClass('glow');
-                $(".sun").find('p').find('span').text($(b).attr('data-process'))
+                let title = $(b).attr('data-process');
+                let text = data[title];
+
+                text = ( text ) ? ( ( text.length == 0 ) ? undefined : text ) : title;
+                $(".sun").find('p').find('.title').text(title);
+                $(".sun").find('p').find('.text').text(text);
             }
 
             if(r2 < min){
                 $('.homePageBall').removeClass('glow');
-                $(".sun").find('p').find('span').text("Shubharam")
+                let title = "Shubharam";
+                let text = data[title];
 
+                text = ( text ) ? ( ( text.length == 0 ) ? undefined : text ) : title;
+                $(".sun").find('p').find('.title').text(title);
+                $(".sun").find('p').find('.text').text(text);
             }
 
     })
 }
+

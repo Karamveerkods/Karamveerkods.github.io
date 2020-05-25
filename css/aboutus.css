@@ -1,0 +1,143 @@
+#page {
+  margin:0;
+  padding:0;
+  top: 0;
+  left:0;
+  bottom: 0;
+  width: 100%;
+  height: 600px;  
+}
+
+.bg-night{
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/239518/birds1.svg"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/239518/birds2.svg"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/239518/clouds.svg"), linear-gradient(to bottom,  rgba(255,255,255,0), 40%,rgba(255,255,255,1) 60%), url("https://www.spriteland.com/sprites/downloads/night-background_SVG.svg:");
+  background-size: 20%, 20%, 100%, 100%, 100%;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat,no-repeat;
+  background-position: 5% 40%, 95% 20%, center bottom;
+}
+
+.bg-day{
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/239518/birds1.svg"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/239518/birds2.svg"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/239518/clouds.svg"), linear-gradient(to bottom,  rgba(255,255,255,0), 40%,rgba(255,255,255,1) 60%), url("https://upload.wikimedia.org/wikipedia/commons/9/98/Dead_sea%2C.png");
+  background-size: 20%, 20%, 100%, 100%, 100%;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat,no-repeat;
+  background-position: 5% 40%, 95% 10%, center bottom;
+}
+
+.aboutUsBody{
+    background-color: #2D3142;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+  .aboutUsInfo p:before {
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    right: -5%;
+    left: -5%;
+    background: inherit;
+    border-radius: 5% / 50%;
+  }
+
+  .aboutUsInfo p{
+    font-family: "Old Standard TT script=all rev=1";
+    color: white;
+    font-weight: 600;
+    font-style: normal;
+    background: transparent;
+  }
+  
+
+  .aboutUsInfo{
+    /* background-color:  #8EE2DC; */
+        /* background-color: #ffee3f; */
+    padding: 4% 4% 4% 0;
+
+  }
+
+  .aboutUsBanner{
+    padding-right: 0px;
+    /* background-color:#8EE2DC;  */
+    background-image: url('../img/aboutus.png'); 
+    background-repeat:no-repeat;
+  }
+
+.inner-wrapper
+{
+	display: block;
+	float: left;
+}
+
+#left_side
+{
+	width:50%;
+	text-align: right;
+	padding: 1%;
+  background: #9e9e9e;
+  color: white; 
+  font-style: Verdana, Geneva, sans-serif; 
+  font-weight: bolder;
+}
+#right_side
+{
+	width:50%;
+	text-align: left;
+	padding: 1%;
+	background: #BFD8D2; 
+}
+
+.aboutUsInfo footer{
+  text-align: center;
+  color: #000;
+}
+
+.contact_style_left{
+  background-color: #8EE2DC;
+}
+
+.contact_card_group{
+  background-color:transparent; 
+}
+
+#contact_style_right{
+	background-color: #EF8354;
+}
+
+#contact_style_left{
+	background-color: #EF8354;
+}
+
+#contact_style_left td{
+  width:50%; 
+  text-align: center;
+} 
+
+#contact_style_right td{
+  width:50%; 
+  text-align: center;
+} 
+
+@media (max-width: 576px) {  
+  .aboutUsBody{
+    padding-top: 5%;
+  }
+
+  #page {
+    height: 300px;  
+  }
+
+  .bg-night{
+    background-size: 20%, 20%, 100%, 100%, 100%;
+    background-position: 5% 40%, 75% 10%, center bottom;
+    
+  }
+  
+  .bg-day{
+    background-size: 20%, 20%, 100%, 100%, 100%;
+    background-position: 5% 40%, 75% 10%, center bottom;
+  }
+
+
+}
